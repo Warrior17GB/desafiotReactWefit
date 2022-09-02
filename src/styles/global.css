@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SansOpen;
+}
+
+@font-face {
+    font-family: 'SansOpen';
+    src: local('SansOpen'),
+        url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format("truetype");
+}
