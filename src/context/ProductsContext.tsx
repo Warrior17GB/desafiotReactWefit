@@ -108,6 +108,12 @@ export const ProductProvider = (props: PropsWithChildren<{}>) => {
 		}
 	};
 
+	const finishPurchase = () => {
+		setProducts([]);
+		setProductsCount(0);
+		setProductsTotal(0);
+	};
+
 	return (
 		<ProductsContext.Provider
 			value={{
@@ -117,6 +123,7 @@ export const ProductProvider = (props: PropsWithChildren<{}>) => {
 				addProductList,
 				removeProduct,
 				removeTotal,
+				finishPurchase,
 			}}
 		>
 			{props.children}

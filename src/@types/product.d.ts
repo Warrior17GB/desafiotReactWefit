@@ -20,4 +20,5 @@ export type ProductContextType = {
 	addProductList: (product: IProduct) => void;
 	removeProduct: (product: IProduct) => void;
 	removeTotal: (product: IProduct) => void;
+	finishPurchase: () => void
 };

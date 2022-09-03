@@ -8,6 +8,7 @@ export const OutletPage = styled.div`
 
 	> div {
 		width: 100%;
-		height: 100%;
+		height: calc(100% - 7rem);
+		min-height: 35rem;
 	}
 `;

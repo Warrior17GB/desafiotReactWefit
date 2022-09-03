@@ -5,6 +5,10 @@
     font-family: SansOpen;
 }
 
+body {
+    background-color: #2f2e41;
+}
+
 @font-face {
     font-family: 'SansOpen';
     src: local('SansOpen'),

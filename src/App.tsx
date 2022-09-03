@@ -6,7 +6,6 @@ import { ProductProvider } from "./context/ProductsContext";
 
 function App() {
 	const Div = styled.div`
-		background-color: #2f2e41;
 		width: 100vw;
 		height: 100vh;
 		padding: 1rem 25% 2.5rem;

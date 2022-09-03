@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const BasketWrapper = styled.div`
-	background: #ffffff;
+	background-color: #ffffff;
 	border-radius: 4px;
 	padding: 0.75rem;
 	display: flex;
 	flex-direction: column;
-	height: auto;
+	max-height: 100%;
 
 	hr {
 		margin-top: 1.5rem;
@@ -44,12 +44,12 @@ export const List = styled.div`
 		-webkit-appearance: none;
 		width: 10px;
 		border-radius: 4px;
-		background: #99999955;
+		background-color: #99999955;
 	}
 
 	::-webkit-scrollbar-thumb {
 		border-radius: 4px;
-		background: #999999;
+		background-color: #999999;
 	}
 `;
 
@@ -81,7 +81,7 @@ export const Summary = styled.div`
 export const FinishPurchase = styled(Link)`
 	border: none;
 	padding: 0.75rem 1.5rem;
-	background: #009edd;
+	background-color: #009edd;
 	border-radius: 4px;
 	color: #ffffff;
 	font-weight: 700;

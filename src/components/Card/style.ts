@@ -62,4 +62,5 @@ export const ButtonText = styled.label`
 	font-size: 0.75rem;
 	font-weight: 700;
 	color: #ffffff;
+	white-space: nowrap;
 `;
