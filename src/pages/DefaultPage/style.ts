@@ -6,7 +6,7 @@ export const OutletPage = styled.div`
 	display: flex;
 	flex-direction: column;
 
-	div {
+	> div {
 		width: 100%;
 		height: 100%;
 	}

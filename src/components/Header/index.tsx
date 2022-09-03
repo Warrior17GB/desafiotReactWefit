@@ -1,4 +1,5 @@
 import React from "react";
+import { useProduct } from "../../context/ProductsContext";
 import {
 	HeaderElement,
 	Logo,
@@ -9,6 +10,8 @@ import {
 } from "./style";
 
 export function Header() {
+	const { productsCount } = useProduct();
+
 	return (
 		<HeaderElement>
 			<Logo to="/home">WeMovies</Logo>
@@ -16,7 +19,7 @@ export function Header() {
 			<NavLinkBasket to="/basket">
 				<DivLabels>
 					<MyShoppingCart>Meu Carrinho</MyShoppingCart>
-					<Items>0 itens</Items>
+					<Items>{`${productsCount} itens`}</Items>
 				</DivLabels>
 				<img src="/images/basketIcon.svg" alt="Cesta de compras" />
 			</NavLinkBasket>

@@ -1,4 +1,6 @@
 import React from "react";
+import { IProduct } from "../../@types/product";
+import { useProduct } from "../../context/ProductsContext";
 import {
 	AddOne,
 	ButtonAdd,
@@ -10,14 +12,9 @@ import {
 	Title,
 } from "./style";
 
-interface Movie {
-	id: number;
-	image: string;
-	price: number;
-	title: string;
-}
+export function Card({ movie }: { movie: IProduct }) {
+	const { addProductList } = useProduct();
 
-export function Card({ movie }: { movie: Movie }) {
 	return (
 		<CardItem>
 			<Poster src={movie.image} alt={movie.title} />
@@ -25,7 +22,7 @@ export function Card({ movie }: { movie: Movie }) {
 			<Price>
 				{`R$ ${movie.price.toFixed(2).toString().replace(".", ",")}`}
 			</Price>
-			<ButtonAdd>
+			<ButtonAdd onClick={() => addProductList(movie)}>
 				<IconAddItem
 					src="/images/addBasketIcon.svg"
 					alt="Adicionar ao carrinho"
